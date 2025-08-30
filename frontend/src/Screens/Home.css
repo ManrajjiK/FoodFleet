@@ -1,0 +1,63 @@
+.food-section-bg {
+  background-color: #575a57; /* A dark gray background */
+  padding: 40px 0; /* Adds some space above and below the content */
+}
+
+
+
+.card {
+  /* Animation के लिए base styles */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: none; /* अगर आप बॉर्डर हटाना चाहते हैं */
+}
+
+.announcement-bar {
+  width: 100%;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+}
+
+.announcement-content {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding-left: 100%; /* start outside of screen */
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.announcement-bar {
+  background-color: #28a745; /* Bootstrap's success color */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+ 
+  border-radius: 5px;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Make the card 5% larger on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Add a subtle shadow for depth */
+}

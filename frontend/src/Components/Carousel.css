@@ -1,0 +1,4 @@
+.c-img {
+  height: 400px;          /* apni height fix kar le (400px / 500px) */
+  object-fit: cover;      /* image crop ho jayegi aur stretch nahi hogi */
+}
