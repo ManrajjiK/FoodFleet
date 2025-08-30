@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "type": "module",
-  "description": "Developed by mr manraj kewat ",
+  "description": "Developed by mr manraj kewat",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
