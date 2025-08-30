@@ -19,7 +19,7 @@ export default function SignUp() {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/Register", {
+      const response = await fetch("http://localhost:5000/api/auth/Register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(credentials),
